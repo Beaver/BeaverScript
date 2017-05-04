@@ -1,0 +1,19 @@
+PODS:
+  - BeaverCodeGen (0.1.0)
+  - Commander (0.6.0)
+
+DEPENDENCIES:
+  - BeaverCodeGen (from `../BeaverCodeGen`)
+  - Commander
+
+EXTERNAL SOURCES:
+  BeaverCodeGen:
+    :path: "../BeaverCodeGen"
+
+SPEC CHECKSUMS:
+  BeaverCodeGen: 44af1f254dc292318bd8fa1979f4b5d8c396a3bc
+  Commander: fba7c96c9e787ecc8ebe0737be875e1e18ef47ff
+
+PODFILE CHECKSUM: 8c4529ad677dd3673241651519fe3c0752f1b768
+
+COCOAPODS: 1.2.1
