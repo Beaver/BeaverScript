@@ -3,17 +3,22 @@ PODS:
   - Commander (0.6.0)
 
 DEPENDENCIES:
-  - BeaverCodeGen (from `../BeaverCodeGen`)
+  - BeaverCodeGen (from `git@github.com:Beaver/BeaverCodeGen.git`)
   - Commander
 
 EXTERNAL SOURCES:
   BeaverCodeGen:
-    :path: "../BeaverCodeGen"
+    :git: git@github.com:Beaver/BeaverCodeGen.git
+
+CHECKOUT OPTIONS:
+  BeaverCodeGen:
+    :commit: 472ee89ed47d36e72a6f437dfed06657a15bf281
+    :git: git@github.com:Beaver/BeaverCodeGen.git
 
 SPEC CHECKSUMS:
   BeaverCodeGen: 44af1f254dc292318bd8fa1979f4b5d8c396a3bc
   Commander: fba7c96c9e787ecc8ebe0737be875e1e18ef47ff
 
-PODFILE CHECKSUM: 8c4529ad677dd3673241651519fe3c0752f1b768
+PODFILE CHECKSUM: c87a5bbd4269195eee121f41f60801667b2624f8
 
 COCOAPODS: 1.2.1

@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		298D49A0D8C3FE5ED01CE1C4547BB21E /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7650830BA8D8A6E17DF25455A88D6185 /* CommandType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		298D49A0D8C3FE5ED01CE1C4547BB21E /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F84984630218497BB617EE3AEA1974 /* CommandType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2AE55B123C76A28B95B8EF69BCDA2A31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		37031E332686C7ADC6A583177A6E0E8D /* CommandRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E18509478161D031B75728606A31 /* CommandRunner.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		41665A433628E7922C4B099FA07ED476 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD1AA518B1E963D4B6DDFCC0E88EC4 /* Main.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4FAB02ED8BD6BA97B4E15776B29ECC6C /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC41E28323875366A79B77B30B42EB9 /* Commands.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		517EE010AB1629E958371C35048E2C9C /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9BF3F694954705DABD28E72C020F0 /* Command.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		37031E332686C7ADC6A583177A6E0E8D /* CommandRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED96A705F1854BE3E95FE2064B62184 /* CommandRunner.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		42D9BD6E75A74F5DAC2716CD8D3F2AED /* BeaverCodeGen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18712A8892A5E262558D46CD0B277CD2 /* BeaverCodeGen-dummy.m */; };
+		4FAB02ED8BD6BA97B4E15776B29ECC6C /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10905AA03CD61799ACB269A7783E779C /* Commands.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		517EE010AB1629E958371C35048E2C9C /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB1B22F2045A9C150421382E2D6637B /* Command.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6944601AB6231304A2C7E64BF996F643 /* Pods-BeaverScript-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9A2F8BD9AF0527F543A9296E451EF /* Pods-BeaverScript-dummy.m */; };
-		6D12B9E083B9BE93C651582CF63A4881 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A5508804D96B658A0275D7956A8DE0 /* Operators.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		83F1150B7894C7A3F02C6FEE02A0F16D /* ArgumentDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48364F80BFBDB76581043CDFD604B320 /* ArgumentDescription.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8490BC2A6E4F3440588A29C62FF422A3 /* BeaverCodeGen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B27B74CE309006DA2412B32E7C8F70 /* BeaverCodeGen-dummy.m */; };
-		89CCB926F397AC0865F3D01835967807 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA50A5BD825FF0BA1A54789FDD1136E0 /* Error.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8C933F3B70E62A3B04B01329E448F2B9 /* Commander-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7683F8E4321881D6E8F0EC79D691AA34 /* Commander-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83F1150B7894C7A3F02C6FEE02A0F16D /* ArgumentDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575A93F598133F0E4D972F1A614A9B4 /* ArgumentDescription.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		89CCB926F397AC0865F3D01835967807 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D45492E8188456BB0CEB74CE1695E8 /* Error.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8C933F3B70E62A3B04B01329E448F2B9 /* Commander-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 067CEAF4D973C387555EC2D36044755D /* Commander-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92E6890A11714D5532D5A8CEAA43F9B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		9F511F31EC6EC9813FB6005AA308B9CA /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B39BE3681651060D0499A22FF304721 /* Group.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A37DD64F07BE74A71DAB4A0C038DE901 /* Commander-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B63ED2B6F2C6A727156115FD40FE0F1F /* Commander-dummy.m */; };
-		A83CD415CEDFDB16EC0F5A612FDA22DB /* BeaverCodeGen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A28BE545963DE719C65F22B3FCAD30 /* BeaverCodeGen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5E515658B53A657B8C05DD53CE75717 /* ArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB7A01CF3F9C9123D8214472BA2567 /* ArgumentParser.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E8B51B2F7BB48C1095E9E851F7697FAE /* ArgumentConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76EC06D91541D769C0DCCF5C296DDC /* ArgumentConvertible.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9F511F31EC6EC9813FB6005AA308B9CA /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A7E786FBB792CDE84F2C7416F1CA6D /* Group.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A37DD64F07BE74A71DAB4A0C038DE901 /* Commander-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 033654A7E03ACA0B8901A0402B2C6BAF /* Commander-dummy.m */; };
+		A83CD415CEDFDB16EC0F5A612FDA22DB /* BeaverCodeGen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B37826A5891202DB4E3FA71284817F /* BeaverCodeGen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0A44FE7D82B1DC755702F3B7E57CF74 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84B2C63B2A0B0F5F70DD235663471D7 /* Main.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C23189614611A9BF5D74FE54D32C52F7 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2588AF0752F8D9B015AC7170BA121FA6 /* Operators.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D25861691B6C7B5532A21A0A118C1F96 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59196E008120339B8F9C356BBB5E84FB /* Action.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D5E515658B53A657B8C05DD53CE75717 /* ArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBCFFE895974EB852C77D55C390DEDA /* ArgumentParser.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E8B51B2F7BB48C1095E9E851F7697FAE /* ArgumentConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2915134F8387FBA738E440AD76E16 /* ArgumentConvertible.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EB0A98D8F1F270C2C770EDE6BF91B053 /* Pods-BeaverScript-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 395C9255FD1F83338A348BEEED3709AC /* Pods-BeaverScript-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F46B71999218B7A6E1F4652DD84147F0 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEA81E1974E40F43D11F9D35056DF2 /* Action.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F8BE252B633821A1C5FFD32D9E473E4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,45 +48,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08A5508804D96B658A0275D7956A8DE0 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		033654A7E03ACA0B8901A0402B2C6BAF /* Commander-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Commander-dummy.m"; sourceTree = "<group>"; };
+		0575A93F598133F0E4D972F1A614A9B4 /* ArgumentDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentDescription.swift; path = Sources/ArgumentDescription.swift; sourceTree = "<group>"; };
+		067CEAF4D973C387555EC2D36044755D /* Commander-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Commander-umbrella.h"; sourceTree = "<group>"; };
 		0DE888D2BE282A48139986EFE1048CCE /* Pods_BeaverScript.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BeaverScript.framework; path = "Pods-BeaverScript.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		11380E62F4CEC7AF9E8A38C02B7CBC19 /* BeaverCodeGen.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BeaverCodeGen.xcconfig; sourceTree = "<group>"; };
+		10905AA03CD61799ACB269A7783E779C /* Commands.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Commands.swift; path = Sources/Commands.swift; sourceTree = "<group>"; };
+		18712A8892A5E262558D46CD0B277CD2 /* BeaverCodeGen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BeaverCodeGen-dummy.m"; sourceTree = "<group>"; };
+		1BB1B22F2045A9C150421382E2D6637B /* Command.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Command.swift; path = Sources/Command.swift; sourceTree = "<group>"; };
 		2121FBD23AAED849903E86DAE28A38E7 /* Pods-BeaverScript.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BeaverScript.release.xcconfig"; sourceTree = "<group>"; };
+		2411C01C8B280C4A65E9B95D08EBDE91 /* BeaverCodeGen.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BeaverCodeGen.xcconfig; sourceTree = "<group>"; };
+		255F11915ECC2450330E9296E1509451 /* Commander.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Commander.modulemap; sourceTree = "<group>"; };
+		2588AF0752F8D9B015AC7170BA121FA6 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = BeaverCodeGen/Generator/Operators.swift; sourceTree = "<group>"; };
 		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		271DB24EB18FE0EA8127A48AC92098DF /* Pods-BeaverScript-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BeaverScript-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2B39BE3681651060D0499A22FF304721 /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Sources/Group.swift; sourceTree = "<group>"; };
-		2BFD0B53C9846EBD888E3BB374CD4076 /* Commander-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Commander-prefix.pch"; sourceTree = "<group>"; };
+		2FBCFFE895974EB852C77D55C390DEDA /* ArgumentParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentParser.swift; path = Sources/ArgumentParser.swift; sourceTree = "<group>"; };
 		34130779B6069835A573B5910AF19223 /* Pods-BeaverScript.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BeaverScript.modulemap"; sourceTree = "<group>"; };
 		395C9255FD1F83338A348BEEED3709AC /* Pods-BeaverScript-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BeaverScript-umbrella.h"; sourceTree = "<group>"; };
-		46BD1AA518B1E963D4B6DDFCC0E88EC4 /* Main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
-		471AE9C4BD5164353F1F70AEF3AEE64C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48364F80BFBDB76581043CDFD604B320 /* ArgumentDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentDescription.swift; path = Sources/ArgumentDescription.swift; sourceTree = "<group>"; };
-		585265BDE27E99BA37FBDEE060349F95 /* BeaverCodeGen-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BeaverCodeGen-prefix.pch"; sourceTree = "<group>"; };
-		5A76EC06D91541D769C0DCCF5C296DDC /* ArgumentConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentConvertible.swift; path = Sources/ArgumentConvertible.swift; sourceTree = "<group>"; };
+		4CB2915134F8387FBA738E440AD76E16 /* ArgumentConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentConvertible.swift; path = Sources/ArgumentConvertible.swift; sourceTree = "<group>"; };
+		5627136F8640F853C5291AE51F2258B4 /* BeaverCodeGen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BeaverCodeGen.modulemap; sourceTree = "<group>"; };
+		56A7E786FBB792CDE84F2C7416F1CA6D /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Sources/Group.swift; sourceTree = "<group>"; };
+		59196E008120339B8F9C356BBB5E84FB /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = BeaverCodeGen/Generator/Action.swift; sourceTree = "<group>"; };
+		6A101AC2FFE0243FC53055F01BD6393F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ED96A705F1854BE3E95FE2064B62184 /* CommandRunner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandRunner.swift; path = Sources/CommandRunner.swift; sourceTree = "<group>"; };
 		6F16ABDDF85F0AFF4F8F4DFD451B8D3F /* Pods-BeaverScript.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BeaverScript.debug.xcconfig"; sourceTree = "<group>"; };
-		7650830BA8D8A6E17DF25455A88D6185 /* CommandType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandType.swift; path = Sources/CommandType.swift; sourceTree = "<group>"; };
-		7683F8E4321881D6E8F0EC79D691AA34 /* Commander-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Commander-umbrella.h"; sourceTree = "<group>"; };
+		6FAA2295D6199919E2E91D85BEB05B93 /* Commander.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Commander.xcconfig; sourceTree = "<group>"; };
 		7CC15D8E585190654D8D6A14C5FA5157 /* Pods-BeaverScript-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BeaverScript-acknowledgements.plist"; sourceTree = "<group>"; };
-		8472CCE16D4D70508F67F18D5E09E242 /* BeaverCodeGen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BeaverCodeGen.modulemap; sourceTree = "<group>"; };
+		82F84984630218497BB617EE3AEA1974 /* CommandType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandType.swift; path = Sources/CommandType.swift; sourceTree = "<group>"; };
 		91C9A2F8BD9AF0527F543A9296E451EF /* Pods-BeaverScript-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BeaverScript-dummy.m"; sourceTree = "<group>"; };
 		9397A7DD12F5009E46DF00437987CF61 /* Pods-BeaverScript-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BeaverScript-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		970C2A86E0C4E44EA9EE80B5319D8379 /* Commander.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Commander.xcconfig; sourceTree = "<group>"; };
+		946BA1A17F63928D3B7147B6CBE6D12A /* BeaverCodeGen-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BeaverCodeGen-prefix.pch"; sourceTree = "<group>"; };
 		980996D11CED8ADA1EB01EADBD5716D6 /* BeaverCodeGen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BeaverCodeGen.framework; path = BeaverCodeGen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1A9D4C67C68AF197778D65A24F8772 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2F9BF3F694954705DABD28E72C020F0 /* Command.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Command.swift; path = Sources/Command.swift; sourceTree = "<group>"; };
-		A8B27B74CE309006DA2412B32E7C8F70 /* BeaverCodeGen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BeaverCodeGen-dummy.m"; sourceTree = "<group>"; };
-		B3C2E18509478161D031B75728606A31 /* CommandRunner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandRunner.swift; path = Sources/CommandRunner.swift; sourceTree = "<group>"; };
-		B63ED2B6F2C6A727156115FD40FE0F1F /* Commander-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Commander-dummy.m"; sourceTree = "<group>"; };
-		BA50A5BD825FF0BA1A54789FDD1136E0 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
-		BDFB7A01CF3F9C9123D8214472BA2567 /* ArgumentParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentParser.swift; path = Sources/ArgumentParser.swift; sourceTree = "<group>"; };
-		D9A28BE545963DE719C65F22B3FCAD30 /* BeaverCodeGen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BeaverCodeGen-umbrella.h"; sourceTree = "<group>"; };
-		E7DEA81E1974E40F43D11F9D35056DF2 /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		A39CDE33A7DD8DF71C6B9E1705844AB2 /* Commander-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Commander-prefix.pch"; sourceTree = "<group>"; };
+		D3D45492E8188456BB0CEB74CE1695E8 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
+		E84B2C63B2A0B0F5F70DD235663471D7 /* Main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Main.swift; path = BeaverCodeGen/Generator/Main.swift; sourceTree = "<group>"; };
 		EBCD5E2F1C98BE046A32CA69E6706CA5 /* Pods-BeaverScript-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BeaverScript-frameworks.sh"; sourceTree = "<group>"; };
-		F0E3E633A6D23FDE4AD7F94866A426EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4D5F6214F127DBBD87F55DE3F346649 /* Commander.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Commander.modulemap; sourceTree = "<group>"; };
+		EE4C5609F50EA5C4DD4445F8D39F55B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B37826A5891202DB4E3FA71284817F /* BeaverCodeGen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BeaverCodeGen-umbrella.h"; sourceTree = "<group>"; };
 		FD85D6944E26464EB98BF7D67D1851CC /* Commander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Commander.framework; path = Commander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFC41E28323875366A79B77B30B42EB9 /* Commands.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Commands.swift; path = Sources/Commands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,44 +143,70 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		54E43AE6EB31A020AB2F4B0C44949C27 /* BeaverCodeGen */ = {
+		506DFE653E95510E43669B1368AEFEDD /* BeaverCodeGen */ = {
 			isa = PBXGroup;
 			children = (
-				9BB6A7E1FFDA9EBB0B1D3012F712966B /* Generator */,
+				59196E008120339B8F9C356BBB5E84FB /* Action.swift */,
+				E84B2C63B2A0B0F5F70DD235663471D7 /* Main.swift */,
+				2588AF0752F8D9B015AC7170BA121FA6 /* Operators.swift */,
+				624FC4CB5B6F94A9002A8ECF894A47F2 /* Support Files */,
 			);
 			name = BeaverCodeGen;
 			path = BeaverCodeGen;
 			sourceTree = "<group>";
 		};
-		6E28119499F1D9F8E9D6FE60B4F20BE3 /* Support Files */ = {
+		596DB253C0D8EB8355D920CDE49C7CD5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F4D5F6214F127DBBD87F55DE3F346649 /* Commander.modulemap */,
-				970C2A86E0C4E44EA9EE80B5319D8379 /* Commander.xcconfig */,
-				B63ED2B6F2C6A727156115FD40FE0F1F /* Commander-dummy.m */,
-				2BFD0B53C9846EBD888E3BB374CD4076 /* Commander-prefix.pch */,
-				7683F8E4321881D6E8F0EC79D691AA34 /* Commander-umbrella.h */,
-				471AE9C4BD5164353F1F70AEF3AEE64C /* Info.plist */,
+				255F11915ECC2450330E9296E1509451 /* Commander.modulemap */,
+				6FAA2295D6199919E2E91D85BEB05B93 /* Commander.xcconfig */,
+				033654A7E03ACA0B8901A0402B2C6BAF /* Commander-dummy.m */,
+				A39CDE33A7DD8DF71C6B9E1705844AB2 /* Commander-prefix.pch */,
+				067CEAF4D973C387555EC2D36044755D /* Commander-umbrella.h */,
+				6A101AC2FFE0243FC53055F01BD6393F /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Commander";
 			sourceTree = "<group>";
 		};
-		73206F875250BC93FA90D908D90042B8 /* Development Pods */ = {
+		624FC4CB5B6F94A9002A8ECF894A47F2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E55EB520E58EDD3433E645E73AC94F17 /* BeaverCodeGen */,
+				5627136F8640F853C5291AE51F2258B4 /* BeaverCodeGen.modulemap */,
+				2411C01C8B280C4A65E9B95D08EBDE91 /* BeaverCodeGen.xcconfig */,
+				18712A8892A5E262558D46CD0B277CD2 /* BeaverCodeGen-dummy.m */,
+				946BA1A17F63928D3B7147B6CBE6D12A /* BeaverCodeGen-prefix.pch */,
+				F1B37826A5891202DB4E3FA71284817F /* BeaverCodeGen-umbrella.h */,
+				EE4C5609F50EA5C4DD4445F8D39F55B2 /* Info.plist */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "../Target Support Files/BeaverCodeGen";
+			sourceTree = "<group>";
+		};
+		730D022825E04E28AFDFDA8BB1B41A02 /* Commander */ = {
+			isa = PBXGroup;
+			children = (
+				4CB2915134F8387FBA738E440AD76E16 /* ArgumentConvertible.swift */,
+				0575A93F598133F0E4D972F1A614A9B4 /* ArgumentDescription.swift */,
+				2FBCFFE895974EB852C77D55C390DEDA /* ArgumentParser.swift */,
+				1BB1B22F2045A9C150421382E2D6637B /* Command.swift */,
+				6ED96A705F1854BE3E95FE2064B62184 /* CommandRunner.swift */,
+				10905AA03CD61799ACB269A7783E779C /* Commands.swift */,
+				82F84984630218497BB617EE3AEA1974 /* CommandType.swift */,
+				D3D45492E8188456BB0CEB74CE1695E8 /* Error.swift */,
+				56A7E786FBB792CDE84F2C7416F1CA6D /* Group.swift */,
+				596DB253C0D8EB8355D920CDE49C7CD5 /* Support Files */,
+			);
+			name = Commander;
+			path = Commander;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				73206F875250BC93FA90D908D90042B8 /* Development Pods */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				A59436895F8639E57EE3A016BA499030 /* Pods */,
+				B780343F6DE689122098AD703016233A /* Pods */,
 				2C337E4A09A3EEC8139643C0EE03BDB4 /* Products */,
 				BDA3951F26598A5621577462622BD73A /* Targets Support Files */,
 			);
@@ -204,35 +230,11 @@
 			path = "Target Support Files/Pods-BeaverScript";
 			sourceTree = "<group>";
 		};
-		91664C9EA50926AB084E79E69DE64CAE /* Support Files */ = {
+		B780343F6DE689122098AD703016233A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8472CCE16D4D70508F67F18D5E09E242 /* BeaverCodeGen.modulemap */,
-				11380E62F4CEC7AF9E8A38C02B7CBC19 /* BeaverCodeGen.xcconfig */,
-				A8B27B74CE309006DA2412B32E7C8F70 /* BeaverCodeGen-dummy.m */,
-				585265BDE27E99BA37FBDEE060349F95 /* BeaverCodeGen-prefix.pch */,
-				D9A28BE545963DE719C65F22B3FCAD30 /* BeaverCodeGen-umbrella.h */,
-				F0E3E633A6D23FDE4AD7F94866A426EB /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../BeaverScript/Pods/Target Support Files/BeaverCodeGen";
-			sourceTree = "<group>";
-		};
-		9BB6A7E1FFDA9EBB0B1D3012F712966B /* Generator */ = {
-			isa = PBXGroup;
-			children = (
-				E7DEA81E1974E40F43D11F9D35056DF2 /* Action.swift */,
-				46BD1AA518B1E963D4B6DDFCC0E88EC4 /* Main.swift */,
-				08A5508804D96B658A0275D7956A8DE0 /* Operators.swift */,
-			);
-			name = Generator;
-			path = Generator;
-			sourceTree = "<group>";
-		};
-		A59436895F8639E57EE3A016BA499030 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EC02FECCEDC8757726924D168F156593 /* Commander */,
+				506DFE653E95510E43669B1368AEFEDD /* BeaverCodeGen */,
+				730D022825E04E28AFDFDA8BB1B41A02 /* Commander */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -243,34 +245,6 @@
 				82B40C17D5841876A8FF7DA34F684A69 /* Pods-BeaverScript */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E55EB520E58EDD3433E645E73AC94F17 /* BeaverCodeGen */ = {
-			isa = PBXGroup;
-			children = (
-				54E43AE6EB31A020AB2F4B0C44949C27 /* BeaverCodeGen */,
-				91664C9EA50926AB084E79E69DE64CAE /* Support Files */,
-			);
-			name = BeaverCodeGen;
-			path = ../../BeaverCodeGen;
-			sourceTree = "<group>";
-		};
-		EC02FECCEDC8757726924D168F156593 /* Commander */ = {
-			isa = PBXGroup;
-			children = (
-				5A76EC06D91541D769C0DCCF5C296DDC /* ArgumentConvertible.swift */,
-				48364F80BFBDB76581043CDFD604B320 /* ArgumentDescription.swift */,
-				BDFB7A01CF3F9C9123D8214472BA2567 /* ArgumentParser.swift */,
-				A2F9BF3F694954705DABD28E72C020F0 /* Command.swift */,
-				B3C2E18509478161D031B75728606A31 /* CommandRunner.swift */,
-				FFC41E28323875366A79B77B30B42EB9 /* Commands.swift */,
-				7650830BA8D8A6E17DF25455A88D6185 /* CommandType.swift */,
-				BA50A5BD825FF0BA1A54789FDD1136E0 /* Error.swift */,
-				2B39BE3681651060D0499A22FF304721 /* Group.swift */,
-				6E28119499F1D9F8E9D6FE60B4F20BE3 /* Support Files */,
-			);
-			name = Commander;
-			path = Commander;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,7 +298,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BA056FCA629E9934CD5A0285F6CA878 /* Build configuration list for PBXNativeTarget "BeaverCodeGen" */;
 			buildPhases = (
-				00EB90821A71505347DD94AF45CE0690 /* Sources */,
+				B527FF659B4E4D65229D909EE9F4768C /* Sources */,
 				13C86030B87891C5D2BA3D9135C0634E /* Frameworks */,
 				E112BEA89CF4A12BB02204E0A7BCD037 /* Headers */,
 			);
@@ -385,17 +359,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00EB90821A71505347DD94AF45CE0690 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F46B71999218B7A6E1F4652DD84147F0 /* Action.swift in Sources */,
-				8490BC2A6E4F3440588A29C62FF422A3 /* BeaverCodeGen-dummy.m in Sources */,
-				41665A433628E7922C4B099FA07ED476 /* Main.swift in Sources */,
-				6D12B9E083B9BE93C651582CF63A4881 /* Operators.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6AC9D7F327F887ABB15BACEA83475BC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -410,6 +373,17 @@
 				298D49A0D8C3FE5ED01CE1C4547BB21E /* CommandType.swift in Sources */,
 				89CCB926F397AC0865F3D01835967807 /* Error.swift in Sources */,
 				9F511F31EC6EC9813FB6005AA308B9CA /* Group.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B527FF659B4E4D65229D909EE9F4768C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25861691B6C7B5532A21A0A118C1F96 /* Action.swift in Sources */,
+				42D9BD6E75A74F5DAC2716CD8D3F2AED /* BeaverCodeGen-dummy.m in Sources */,
+				C0A44FE7D82B1DC755702F3B7E57CF74 /* Main.swift in Sources */,
+				C23189614611A9BF5D74FE54D32C52F7 /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +503,7 @@
 		};
 		5AD3D8C5676D155A9A581DABA807A604 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 970C2A86E0C4E44EA9EE80B5319D8379 /* Commander.xcconfig */;
+			baseConfigurationReference = 6FAA2295D6199919E2E91D85BEB05B93 /* Commander.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "-";
@@ -606,7 +580,7 @@
 		};
 		79502684D4D7FA932964B77B88F61DD3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11380E62F4CEC7AF9E8A38C02B7CBC19 /* BeaverCodeGen.xcconfig */;
+			baseConfigurationReference = 2411C01C8B280C4A65E9B95D08EBDE91 /* BeaverCodeGen.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "-";
@@ -642,7 +616,7 @@
 		};
 		85044644B63BB61C5F1BCD36EC0AE56B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 970C2A86E0C4E44EA9EE80B5319D8379 /* Commander.xcconfig */;
+			baseConfigurationReference = 6FAA2295D6199919E2E91D85BEB05B93 /* Commander.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "-";
@@ -723,7 +697,7 @@
 		};
 		DAB2A080D20541DA9596FB965642D258 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11380E62F4CEC7AF9E8A38C02B7CBC19 /* BeaverCodeGen.xcconfig */;
+			baseConfigurationReference = 2411C01C8B280C4A65E9B95D08EBDE91 /* BeaverCodeGen.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "-";
