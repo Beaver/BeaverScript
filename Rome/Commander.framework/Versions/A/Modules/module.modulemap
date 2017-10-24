@@ -7,4 +7,5 @@ framework module Commander {
 
 module Commander.Swift {
     header "Commander-Swift.h"
+    requires objc
 }

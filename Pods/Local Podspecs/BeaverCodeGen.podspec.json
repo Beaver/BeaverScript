@@ -17,5 +17,10 @@
   "platforms": {
     "osx": "10.10"
   },
-  "source_files": "BeaverCodeGen/Generator/**/*.swift"
+  "source_files": "BeaverCodeGen/**/*.swift",
+  "dependencies": {
+    "SourceKittenFramework": [
+      "~> 0.18.1"
+    ]
+  }
 }

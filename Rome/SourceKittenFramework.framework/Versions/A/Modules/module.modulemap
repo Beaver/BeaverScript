@@ -1,0 +1,11 @@
+framework module SourceKittenFramework {
+  umbrella header "SourceKittenFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SourceKittenFramework.Swift {
+    header "SourceKittenFramework-Swift.h"
+    requires objc
+}
