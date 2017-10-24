@@ -30,5 +30,19 @@ Group {
                                          moduleNames: [])
         _ = generator.byInserting(module: moduleName, in: fileHandler)
     }
+    $0.command("action",
+       Argument<String>("path", description: "Path to generated project"),
+       Argument<String>("project_name", description: "Your project name"),
+       Argument<String>("module_name", description: "Your module name"),
+       Argument<String>("action_name", description: "Your action name"),
+       Argument<String>("action_type", description: "Your action type: [ui|routing]")
+    ) { path, projectName, moduleName, actionName, actionType in
+        let fileHandler = FileHandler(basePath: path)
+        let generator = ProjectGenetator(name: projectName,
+                                         moduleNames: [])
+        _ = generator.byInserting(action: actionType == "ui" ? .ui(EnumCase(name: actionName)) : .routing(EnumCase(name: actionName)),
+                                  toModule: moduleName,
+                                  in: fileHandler)
+    }
 }.run()
 

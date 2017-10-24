@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   BeaverCodeGen:
-    :commit: 190a90b06d6acf22dd87621c3098704e8ed99f71
+    :commit: 3fb7b1a1ac166108b2c0bf2ee957fd313f220b52
     :git: git@github.com:Beaver/BeaverCodeGen.git
 
 SPEC CHECKSUMS:
