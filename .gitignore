@@ -1,8 +1,8 @@
-*.xcodeproj/**/xcuserdata/
-*.xcworkspace/**/xcuserdata/
-Pods/Pods.xcodeproj/xcuserdata/
+*.xcodeproj
 /Carthage
 /Cartfile.resolved
 /.build
 .DS_Store
 .idea/
+Package.resolved
+.build
