@@ -3,6 +3,10 @@
 import Commander
 import BeaverCodeGen
 
+guard let basePath = ProcessInfo.processInfo.environment["BASE_DIR"] else {
+    fatalError("Could not find env variable 'BASE_DIR'")
+}
+
 Group {
     $0.command("project",
         Argument<String>("path", description: "Path to generated project"),
@@ -14,7 +18,7 @@ Group {
             .map { $0.trimmingCharacters(in: .whitespaces) }
             .filter { !$0.isEmpty }
         
-        let fileHandler = FileHandler(basePath: path)
+        let fileHandler = FileHandler(basePath: "\(basePath)/\(path)")
         let generator = ProjectGenetator(name: name,
                                          moduleNames: moduleNames)
 
@@ -25,7 +29,7 @@ Group {
         Argument<String>("project_name", description: "Your project name"),
         Argument<String>("module_name", description: "Your module name")
     ) { path, projectName, moduleName in
-        let fileHandler = FileHandler(basePath: path)
+        let fileHandler = FileHandler(basePath: "\(basePath)/\(path)")
         let generator = ProjectGenetator(name: projectName,
                                          moduleNames: [])
         _ = generator.byInserting(module: moduleName, in: fileHandler)
@@ -37,7 +41,7 @@ Group {
        Argument<String>("action_name", description: "Your action name"),
        Argument<String>("action_type", description: "Your action type: [ui|routing]")
     ) { path, projectName, moduleName, actionName, actionType in
-        let fileHandler = FileHandler(basePath: path)
+        let fileHandler = FileHandler(basePath: "\(basePath)/\(path)")
         let generator = ProjectGenetator(name: projectName,
                                          moduleNames: [])
         _ = generator.byInserting(action: actionType == "ui" ? .ui(EnumCase(name: actionName)) : .routing(EnumCase(name: actionName)),
