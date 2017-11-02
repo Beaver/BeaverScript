@@ -2,7 +2,7 @@ PODS:
   - BeaverCodeGen (0.1.0):
     - SourceKittenFramework (~> 0.18.1)
   - Commander (0.8.0)
-  - SourceKittenFramework (0.18.1):
+  - SourceKittenFramework (0.18.2):
     - SWXMLHash (~> 4.1)
     - Yams (~> 0.3)
   - SWXMLHash (4.2.3)
@@ -18,13 +18,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   BeaverCodeGen:
-    :commit: 3fb7b1a1ac166108b2c0bf2ee957fd313f220b52
+    :commit: c866fd7fa9352d9525ddcc9fb9430e3d9e21aaf7
     :git: git@github.com:Beaver/BeaverCodeGen.git
 
 SPEC CHECKSUMS:
   BeaverCodeGen: efd1670645ede79886740b1c3734974c9ca1d534
   Commander: 6eda7635b133e239faa85bf75dcab88d6fd63aaa
-  SourceKittenFramework: 7c508d6deb5df1c9d7b50d44199dda0c0abe6a51
+  SourceKittenFramework: c509e45ee1b1de4f146e35a2261b33e7bbc95143
   SWXMLHash: 6ab10e1cb4567d88cd3634be0bf331a7839945dd
   Yams: 54731dac19bf3e499b8783ac482ca42ddf3efa4f
 

@@ -1,4 +1,4 @@
-struct ModuleReducer: Generating {
+struct ModuleReducer: SwiftGenerating {
     let objectType: ObjectType = .reducer
     let moduleName: String
 }
@@ -11,6 +11,7 @@ extension ModuleReducer {
     var description: String {
         return """
         import Beaver
+        import Core
         
         public struct \(moduleName.typeName)Reducer: Beaver.ChildReducing {
             public typealias ActionType = \(moduleName.typeName)Action
@@ -24,7 +25,16 @@ extension ModuleReducer {
                                completion: @escaping (\(moduleName.typeName)State) -> ()) -> \(moduleName.typeName)State {
                 var newState = state
         
-                // Update the state here
+                switch action {
+                case \(moduleName.typeName)RoutingAction.start:
+                    newState.currentScreen = .main
+        
+                case \(moduleName.typeName)RoutingAction.stop:
+                    newState.currentScreen = .none
+        
+                default:
+                    break
+                }
         
                 return newState
             }
@@ -35,7 +45,7 @@ extension ModuleReducer {
 }
 
 
-struct AppReducer: Generating {
+struct AppReducer: SwiftGenerating {
     let objectType: ObjectType = .reducer
     var moduleNames: [String]
 }
@@ -48,6 +58,10 @@ extension AppReducer {
     var description: String {
         return """
         import Beaver
+        import Core
+        \(moduleNames.map {
+        "import \($0.typeName)"
+        }.joined(separator: .br))
         
         struct AppReducer: Beaver.Reducing {
         \(moduleNames.count > 0 ? moduleNames.map {
@@ -99,12 +113,21 @@ extension AppReducer {
         }
         
         let reducerVars = reducerStruct.find { ($0.typeName?.isModuleReducer ?? false) && $0.kind == .`var` }
+        
+        // Insert module import
+        let selectorString = "import \(reducerVars.last?.typeName?.name.replacingOccurrences(of: "Reducer", with: "") ?? "Core")".br
+        var insertedCharacterCount = fileHandler.insert(content: "import \(moduleName.typeName)\(reducerVars.count > 0 ? .br : "")",
+                                                        atOffset: 0,
+                                                        withSelector: .matching(string: selectorString, insert: .after),
+                                                        inFileAtPath: path)
+        
         let varOffset = reducerVars.last?.offset ?? reducerStruct.offset
         
-        let insertedCharacterCount = fileHandler.insert(content: "let \(moduleName.varName): \(moduleName.typeName)Reducer".indented.br,
-                                                        atOffset: varOffset,
-                                                        withSelector: .matching(string: .br, insert: .after),
-                                                        inFileAtPath: path)
+        // Insert module reducer var
+        insertedCharacterCount += fileHandler.insert(content: "let \(moduleName.varName): \(moduleName.typeName)Reducer".indented.br,
+                                                     atOffset: varOffset + insertedCharacterCount,
+                                                     withSelector: .matching(string: .br, insert: .after),
+                                                     inFileAtPath: path)
         
         guard let handleSwitch = reducerStruct.find(recursive: true, isMatching: {
             $0.kind == .`switch` && $0.parent?.typeName == .beaverReducingHandleMethod
@@ -112,6 +135,7 @@ extension AppReducer {
             fatalError("Couldn't find switch in \(SwiftTypeName.beaverReducingHandleMethod.name) in \(fileHandler)")
         }
 
+        // Insert module action case
         _ = fileHandler.insert(content: moduleActionCase([moduleName]).indented(count: 2).br(2),
                                atOffset: handleSwitch.offset + insertedCharacterCount,
                                withSelector: .matching(string: "default".indented(count: 2), insert: .before),

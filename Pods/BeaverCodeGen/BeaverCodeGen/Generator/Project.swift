@@ -1,4 +1,4 @@
-public struct ProjectGenetator: Generating {
+public struct ProjectGenetator: SwiftGenerating {
     public let objectType: ObjectType = .project
     
     public let name: String
@@ -20,7 +20,7 @@ public struct ProjectGenetator: Generating {
         modulesGenerators([moduleName]).forEach {
             $0.generate(in: filehandler)
         }
-        
+
         appGenerators.forEach {
             _ = $0.byInserting(module: moduleName, in: filehandler)
         }
@@ -50,24 +50,41 @@ private extension ProjectGenetator {
             AppState(moduleNames: moduleNames),
             AppReducer(moduleNames: moduleNames),
             AppPresenter(moduleNames: moduleNames),
-            AppDelegate()
+            AppDelegate(),
+            RootCakefile(),
+            RootPodfile(),
+            AppInfoPList(isTest: false),
+            AppInfoPList(isTest: true)
         ]
     }
     
     func modulesGenerators(_ moduleNames: [String]) -> [Generating] {
-        return moduleNames.reduce([Generating]()) { generators, moduleName in
+        return moduleNames.reduce([SwiftGenerating]()) { generators, moduleName in
             return generators + [
                 ModuleAction(moduleName: moduleName),
                 ModuleState(moduleName: moduleName),
                 ModuleReducer(moduleName: moduleName),
                 ViewController(moduleName: moduleName),
-                ModulePresenter(moduleName: moduleName)
+                ModulePresenter(moduleName: moduleName),
+                TargetCakefile(targetName: moduleName),
+                TargetPodfile(targetName: moduleName),
+                ModuleInfoPList(moduleName: moduleName, isTest: false),
+                ModuleInfoPList(moduleName: moduleName, isTest: true)
             ]
         }
     }
     
+    var coreGenerators: [Generating] {
+        return [
+            TargetCakefile(targetName: "Core"),
+            TargetPodfile(targetName: "Core"),
+            ModuleInfoPList(moduleName: "Core", isTest: false),
+            ModuleInfoPList(moduleName: "Core", isTest: true)
+        ]
+    }
+    
     var generators: [Generating] {
-        return appGenerators + modulesGenerators(moduleNames)
+        return appGenerators + modulesGenerators(moduleNames) + coreGenerators
     }
 }
 
