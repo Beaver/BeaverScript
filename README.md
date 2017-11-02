@@ -2,7 +2,14 @@
 
 Scipts used for automatisation of repetitive tasks when using Beaver
 
+## Build
+
+```bash
+$ make build
+```
+
 ## Install
 
-- Clone the repository
-- Use `beaver` located in the `bin` directory
+```
+$ make install
+```
