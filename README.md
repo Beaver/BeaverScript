@@ -1,6 +1,6 @@
 # BeaverScript
 
-Scipts used for automatisation of repetitive tasks when using Beaver
+Scripts used for automatisation of repetitive tasks when using Beaver
 
 ## Build
 
