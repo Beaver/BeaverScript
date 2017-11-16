@@ -95,6 +95,18 @@ struct ArgumentInputs {
     }
 }
 
+enum ModuleActionType: String {
+    case ui = "ui"
+    case routing = "routing"
+    
+    init(string: String) {
+        guard let actionType = ModuleActionType(rawValue: string.lowercased()) else {
+            print("[action_type] parameter can be [ui|routing]")
+            exit(1)
+        }
+        self = actionType
+    }
+}
 
 Group {
     $0.command("init",
@@ -154,9 +166,18 @@ Group {
             let fileHandler = FileHandler(basePath: argumentInputs.getProjectPath())
             let generator = ProjectGenetator(name: argumentInputs.getProjectName(),
                                              moduleNames: [])
-            _ = generator.byInserting(action: actionType == "ui" ? .ui(EnumCase(name: actionName)) : .routing(EnumCase(name: actionName)),
-                                      toModule: argumentInputs.getModuleName(),
-                                      in: fileHandler)
+            switch ModuleActionType(string: actionType) {
+            case .ui:
+                _ = generator.byInserting(action: EnumCase(name: actionName),
+                                          ofType: ModuleUIAction.self,
+                                          toModule: argumentInputs.getModuleName(),
+                                          in: fileHandler)
+            case .routing:
+                _ = generator.byInserting(action: EnumCase(name: actionName),
+                                          ofType: ModuleRoutingAction.self,
+                                          toModule: argumentInputs.getModuleName(),
+                                          in: fileHandler)
+            }
             
             print("A new action has been added to your module.")
         }
